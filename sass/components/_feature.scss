@@ -7,6 +7,13 @@
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     margin-bottom: 30px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n + 4) {
+        margin-bottom: 0;
+    }
 }
 
 .icon {
@@ -25,14 +32,6 @@
 
     background-color: var(--section-color);
     border-radius: 4px;
-}
-
-.feature .item:nth-child(4n) {
-    margin-right: 0;
-}
-
-.feature .item:nth-last-child(-n + 4) {
-    margin-bottom: 0;
 }
 
 .feature .title {

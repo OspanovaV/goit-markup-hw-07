@@ -75,9 +75,10 @@
     fill: var(--icon-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-link:hover &,
+.social-link:focus & {
     fill: var(--secondary-white-color);
 }
+}
+

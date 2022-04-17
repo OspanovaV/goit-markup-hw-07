@@ -18,12 +18,12 @@
     flex-wrap: wrap;
 }
 
-.work-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-
 .work-list-item {
     position: relative;
+
+&:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
 }
 
 .work-box {
