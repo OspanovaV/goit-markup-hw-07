@@ -1,14 +1,17 @@
-header {
-    background-color: var(--secondary-white-color);
-}
 .page-header {
-    position: fixed;
+    position: fixed;    
     z-index: 999;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 80px;
+    min-height: 60px;
+    background-color: var(--secondary-white-color);
     border-bottom: 1px solid #ececec;
+
+    @media screen and (min-width:768px) {
+        min-height: 80px;
+    }
 }
 
 /* Лого */
@@ -16,9 +19,14 @@ header {
     color: var(--title-text-color);
     font-family: var(--accent-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
+
+    @media screen and (min-width:768px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo-web {
@@ -29,9 +37,17 @@ header {
 .navigation {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+    }
+   
 }
 
 .nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }    
     margin-left: 93px;
 }
 
@@ -43,8 +59,11 @@ header {
     margin-right: 50px;
 }
 
-.nav__link {
-    display: block;
+.nav__link { 
+    position: relative;
+    display: flex;
+    align-items: center;
+
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -56,11 +75,16 @@ header {
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
+    
+    &:hover,
+    &:focus {
     color: var(--accent-color);
 }
-/* подчеркивание активной страницы */
+/* активная страница */
+&--current {
+    color: var(--accent-color);
+}
+
 &--current::after {
     content: "";
     position: absolute;
@@ -71,23 +95,21 @@ header {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-    }
+    }    
 }
 
 /* контакты */
 .contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: 767px) {
+     display: none;
     }
-}
-
-.nav__link {
-    position: relative;
-    display: flex;
-    align-items: center;
+    
+    //  display: flex;
+    //  margin-left: auto;
+    //  align-items: center;
+    //  &__item:not(:last-child) {
+    //      margin-right: 30px;
+    //  }
 }
 
 .contacts__icon {

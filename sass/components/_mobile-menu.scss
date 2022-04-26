@@ -1,0 +1,22 @@
+.menu-nav__item {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.17;
+
+letter-spacing: 0.02em;
+
+color: var(--title-text-color);
+}
+
+.menu-contacts__link:first-child {
+ font-size: 34px;
+line-height: 1.17;
+font-weight: 500;
+
+letter-spacing: 0.02em;
+
+color: var(--accent-color);
+}
+&:last-child {
+    color: var(--primary-text-color);
+    }

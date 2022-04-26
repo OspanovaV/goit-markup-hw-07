@@ -16,6 +16,41 @@
     <header class="page-header">
         <div class="container navigation">
             <a href="/" class="logo"><span class="logo-web">Web</span>Studio</a>
+            <button class="menu-btn" type="button" aria-label="кнопка открытия меню">
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use class="menu-btn__icon-open" href="./images/sprite.svg#open-menu-icon"></use>
+                    <use class="menu-btn__icon-close" href="./images/sprite.svg#close-menu-icon"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">                
+                <ul class="menu-nav__list list">
+                    <li class="menu-nav__item">
+                        <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студия</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="" class="menu-nav__link">Контакты</a>
+                    </li>
+                </ul>                
+                <ul class="menu-contacts">
+                    <li class="menu-contacts__item">
+                        <a class="menu-contacts__link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="manu-contacts__item">
+                        <a class="menu-contacts__link" href="tel:+380961111111">                            
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <ul class="menu-social">
+                    <li><a class="menu-social__link" href="">Instagram</a></li>
+                    <li><a class="menu-social__link" href="">Twitter</a></li>
+                    <li><a class="menu-social__link" href="">Facebook</a></li>
+                    <li><a class="menu-social__link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
             <nav class="nav">               
                 <ul class="nav__list list">
                     <li class="nav__item">
@@ -49,18 +84,18 @@
     </header>
     <main>
         <!-- Герой -->
-        <section class="hero overlay"> 
+        <!-- <section class="hero overlay"> 
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button" data-open-modal>Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
         <!-- Преимущества -->
         <section class="section">
            <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="feature">
-                    <li class="item">
+                    <li class="feature-item">
                        <div class="item-icon">
                             <svg class="icon">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
@@ -69,7 +104,7 @@
                         <h3 class="title">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="item">
+                    <li class="feature-item">
                        <div class="item-icon">
                             <svg class="icon">
                                 <use href="./images/sprite.svg#icon-vector"></use>
@@ -78,7 +113,7 @@
                         <h3 class="title">Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="item">
+                    <li class="feature-item">
                         <div class="item-icon">
                             <svg class="icon">
                                 <use href="./images/sprite.svg#icon-diagram"></use>
@@ -87,7 +122,7 @@
                         <h3 class="title">Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="item">
+                    <li class="feature-item">
                         <div class="item-icon">
                             <svg class="icon">
                                 <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -137,28 +172,28 @@
                             <p>Product Designer</p>
                             <ul class="social-item">
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.instagram.com/">
+                                    <a class="social-link" href="https://www.instagram.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.twitter.com/">
+                                    <a class="social-link" href="https://www.twitter.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.facebook.com/">
+                                    <a class="social-link" href="https://www.facebook.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.linkedin.com/">
+                                    <a class="social-link" href="https://www.linkedin.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -174,28 +209,28 @@
                             <p>Frontend Developer</p>
                             <ul class="social-item">
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.instagram.com/">
+                                    <a class="social-link" href="https://www.instagram.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.twitter.com/">
+                                    <a class="social-link" href="https://www.twitter.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.facebook.com/">
+                                    <a class="social-link" href="https://www.facebook.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.linkedin.com/">
+                                    <a class="social-link" href="https://www.linkedin.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -211,28 +246,28 @@
                             <p>Marketing</p>                        
                             <ul class="social-item">
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.instagram.com/">
+                                    <a class="social-link" href="https://www.instagram.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.twitter.com/">
+                                    <a class="social-link" href="https://www.twitter.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.facebook.com/">
+                                    <a class="social-link" href="https://www.facebook.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.linkedin.com/">
+                                    <a class="social-link" href="https://www.linkedin.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -248,28 +283,28 @@
                             <p>UI Designer</p>
                             <ul class="social-item">
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.instagram.com/">
+                                    <a class="social-link" href="https://www.instagram.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.twitter.com/">
+                                    <a class="social-link" href="https://www.twitter.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.facebook.com/">
+                                    <a class="social-link" href="https://www.facebook.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-list">
-                                    <a class="social-link" href="https://www.linkedin.com/">
+                                    <a class="social-link" href="https://www.linkedin.com/" target="_blank">
                                         <svg class="social-icon">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -328,9 +363,7 @@
                                 <use href="./images/sprite.svg#icon-tag-line"></use>
                             </svg>
                         </a>
-                    </li>
-
-                   
+                    </li>                   
                 </ul>
             </div>
 
@@ -381,7 +414,7 @@
             </div>
             <div class="subscribe">
                 <h3 class="title">Подпишитесь на рассылку</h3>
-                <form>
+                <form class="subscribe-form">
                     <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
                     <button class="subscribe-button" type="submit">Подписаться</button>
                 </form>
@@ -389,7 +422,7 @@
        </div>      
     </footer>
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-backdrop>
+    <!-- <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
             <button class="close" type="button" data-close-modal>
                 <svg class="modal-close" width="18" height="18">
@@ -447,7 +480,7 @@
             <button class="modal-batton" type="submit">Отправить</button>
          </form>   
         </div>
-    </div>
+    </div> -->
     <!-- Скрипт для фиксированного хедера  -->
     <script>
         const { height: pageHeaderHeight } = document

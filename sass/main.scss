@@ -1,17 +1,16 @@
-// переменные
-@import "./variables/variables";
-
 // базовые стили
 @import "./base/base";
 
 // Утилиты
+@import "./utils/variables";
 @import "./utils/visually-hidden";
-
 
 // компоненты
 @import "./components/btn";
+@import "./components/menu-btn";
 @import "./components/modal/module";
 @import "./components/container";
+@import "./components/mobile-menu";
 
 @import "./components/header";
 @import "./components/hero";
